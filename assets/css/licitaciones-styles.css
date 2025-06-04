@@ -1,0 +1,137 @@
+/* General styles */
+#licitaciones-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#licitaciones-buscador {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Container for results and pagination */
+#licitaciones-resultados-paginacion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#licitaciones-resultados {
+    flex: 1;
+    min-height: 100px;
+    width: 100%;
+}
+
+/* Spinner */
+.spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.spinner .spinner-icon {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #ddd;
+    border-top: 3px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Styles for bid cards */
+.licitacion-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    background-color: #fff;
+}
+
+.licitacion-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.licitacion-titulo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.licitacion-card p {
+    margin: 5px 0;
+}
+
+.btn-ver-mas {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.btn-ver-mas:hover {
+    background-color: #0056b3;
+}
+
+/* Pagination */
+#paginacion {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#paginacion a, #paginacion span {
+    margin: 0 5px;
+    padding: 5px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+#paginacion a.active {
+    background-color: #0056b3;
+}
+
+#paginacion span {
+    background-color: transparent;
+    color: #000;
+}
+
+/* Buttons */
+.toggle-today-btn {
+    background-color: #007bff;
+    color: white;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.search-btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.clear-btn {
+    width: 100%;
+    margin-top: 10px;
+}
